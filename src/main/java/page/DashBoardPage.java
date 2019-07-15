@@ -2,6 +2,7 @@ package page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -12,7 +13,14 @@ public class DashBoardPage
 	private WebDriver driver;
 
 	//***************************************************************************************
-	@FindBy(id="IMG1")
+	
+	@FindBy(xpath="//div[text() = 'Manju Dhananjaya ']")
+	private WebElement NameTab;
+	
+	@FindBy(xpath="//div[@class = '_1Q5BxB' ][text() = 'Logout']")
+	private WebElement LogoutLink;
+	
+	/*@FindBy(id="IMG1")
 	private WebElement LogoutButton;
 	
 	@FindBy(id="IMG3")
@@ -44,7 +52,7 @@ public class DashBoardPage
 	
 	@FindBy(xpath="//img[@src = \"Images/img-quality.png\"]")
 	private WebElement ualityManagementImage;
-	
+	*/
 	//***************************************************************************************
 	public DashBoardPage(WebDriver driver)
 		{
@@ -53,7 +61,24 @@ public class DashBoardPage
 		}
 	
 	//***************************************************************************************
+	public void HowerOnNameTab()	
+	{
+		Actions action = new Actions(driver);
+		action.moveToElement(NameTab).build().perform();
+	}
+	
 	public void VerifyLogoutButton()
+	{
+		WebGeneric.WebelementPresent(LogoutLink);
+	}
+	
+	public void clickLogoutButton(long time)
+	{
+		WebGeneric.waitForVisibilityAndClick(driver, time, LogoutLink);		
+	}
+
+	
+	/*public void VerifyLogoutButton()
 	{
 		WebGeneric.WebelementPresent(LogoutButton);
 	}
@@ -109,6 +134,6 @@ public class DashBoardPage
 	public void clickualityManagementImage(long time)
 	{
 		WebGeneric.waitForVisibilityAndClick(driver, time, ualityManagementImage);		
-	}
+	}*/
 	//***************************************************************************************
 }

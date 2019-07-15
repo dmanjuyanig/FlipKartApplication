@@ -1,14 +1,14 @@
 {
 	"LoginDetails":
 	{
-		"username" : "manju.r",
-		"password" : "Yanig_11sid",
+		"username" : "9739313941",
+		"password" : "Yanig_1sid",
 		"invalidusername" : "admin123@alten.com",
 		"invalidpassword" : "test123@123",
 		"blankusername" : "",
 		"blankpassword" : "",
-		"homepage" : "Home",
-		"loginpage" : "Login",
+		"homepage" : "www.flipkart.com",
+		"loginpage" : "www.flipkart.com",
 		"forgotpasswordpage" : "forgottenpassword"
 		
 	}

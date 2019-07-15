@@ -1,4 +1,4 @@
-package script;
+/*package script;
 
 import org.testng.annotations.Test;
 
@@ -38,13 +38,13 @@ public class T2_HomePageFunctionality extends BaseTest
 		MyEmployeePage MyPage = new MyEmployeePage(driver);
 		//MyPage.menuHeader();
 		MyPage.VerifyOfficialTab();
-		/*MyPage.VerifyPersonalTab();
+		MyPage.VerifyPersonalTab();
 		MyPage.VerifyBankingTab();
 		MyPage.VerifyAcademicPassportTab();
 		MyPage.VerifySkillsCertificationTab();
 		MyPage.VerifyLeaveHistoryTab();
-		MyPage.VerifyStatusHistoryTab();*/
+		MyPage.VerifyStatusHistoryTab();
 	}
 }
 	
-	
+	*/

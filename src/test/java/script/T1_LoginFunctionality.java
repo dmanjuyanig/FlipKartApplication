@@ -33,20 +33,19 @@ public class T1_LoginFunctionality extends BaseTest
 		String homepageURL=Utility.getJSONData(DATA_JSONPATH,"homepage", "LoginDetails");
 		WebGeneric.VerifyURL(driver, lngETO, homepageURL);
 		
+		//Howering on tab
 		DashBoardPage home = new DashBoardPage(driver);
-		home.clickMyPageImage(lngETO);
+		home.HowerOnNameTab();
+		
 		//click -> logout
-		home.VerifyHomeLogo();
-		home.VerifyLogoutButton();
 		home.clickLogoutButton(lngETO);
 		
 		//verify that login page is displayed
 		String loginpageURL=Utility.getJSONData(DATA_JSONPATH,"loginpage", "LoginDetails");
 		WebGeneric.VerifyURL(driver, lngETO, loginpageURL);
-		
 	}
 	
-	@Test (description = "Verifying invalid login functionality" , priority =2, groups = {"smoke"})
+	/*@Test (description = "Verifying invalid login functionality" , priority =2, groups = {"smoke"})
 	public void TestCase_2_InvalidLogin() throws InterruptedException
 	{
 		String un=Utility.getJSONData(DATA_JSONPATH,"invalidusername", "LoginDetails");
@@ -120,5 +119,5 @@ public class T1_LoginFunctionality extends BaseTest
 			//driver.switchTo().defaultContent();
 			//System.out.println("Parent Tab Title " +driver.getTitle());
 		}
-	}
+	}*/
 }

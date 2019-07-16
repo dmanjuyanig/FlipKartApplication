@@ -29,10 +29,10 @@ public class LoginPage
 	@FindBy(id="imgbtnCancel")
 	private WebElement CancelButton;
 	
-	@FindBy(id="lnkbtnForgotPwd")
+	@FindBy(xpath="//a[@class = '_21JmK0 _1__46T']")
 	private WebElement ForgotPasswordLink;
 	
-	@FindBy(id="lblError")
+	@FindBy(xpath="//span[@class = 'ZAtlA-']")
 	private WebElement ErrorMessage;
 
 	//***************************************************************************************

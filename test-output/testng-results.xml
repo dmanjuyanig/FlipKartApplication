@@ -14,24 +14,18 @@
       <![CDATA[Required page is displayed]]>
     </line>
     <line>
-      <![CDATA[Element is Visible]]>
-    </line>
-    <line>
-      <![CDATA[Required page is displayed]]>
-    </line>
-    <line>
-      <![CDATA[TestCaseName:TestCase_1_ValidLogin Status:PASS]]>
+      <![CDATA[TestCaseName:TestCase_1_ValidHomepage Status:PASS]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12931" started-at="2019-07-15T10:49:08Z" finished-at="2019-07-15T10:49:20Z">
+  <suite name="Default suite" duration-ms="14218" started-at="2019-07-16T09:41:57Z" finished-at="2019-07-16T09:42:11Z">
     <groups>
       <group name="smoke">
-        <method signature="T1_LoginFunctionality.TestCase_1_ValidLogin()[pri:1, instance:script.T1_LoginFunctionality@4fcd19b3]" name="TestCase_1_ValidLogin" class="script.T1_LoginFunctionality"/>
+        <method signature="T2_HomePageFunctionality.TestCase_1_ValidHomepage()[pri:1, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="TestCase_1_ValidHomepage" class="script.T2_HomePageFunctionality"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="12931" started-at="2019-07-15T10:49:08Z" finished-at="2019-07-15T10:49:20Z">
-      <class name="script.T1_LoginFunctionality">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.T1_LoginFunctionality@4fcd19b3]" name="openApp" is-config="true" duration-ms="8006" started-at="2019-07-15T10:49:08Z" finished-at="2019-07-15T10:49:16Z">
+    <test name="Default test" duration-ms="14218" started-at="2019-07-16T09:41:57Z" finished-at="2019-07-16T09:42:11Z">
+      <class name="script.T2_HomePageFunctionality">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="openApp" is-config="true" duration-ms="9689" started-at="2019-07-16T09:41:57Z" finished-at="2019-07-16T09:42:07Z">
           <params>
             <param index="0">
               <value>
@@ -47,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="TestCase_1_ValidLogin()[pri:1, instance:script.T1_LoginFunctionality@4fcd19b3]" name="TestCase_1_ValidLogin" duration-ms="3844" started-at="2019-07-15T10:49:16Z" description="Verifying valid login functionality" finished-at="2019-07-15T10:49:19Z">
+        <test-method status="PASS" signature="TestCase_1_ValidHomepage()[pri:1, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="TestCase_1_ValidHomepage" duration-ms="3569" started-at="2019-07-16T09:42:07Z" description="Verifying valid login functionality" finished-at="2019-07-16T09:42:10Z">
           <reporter-output>
             <line>
               <![CDATA[Element is present-- PASS ]]>
@@ -61,29 +55,23 @@
             <line>
               <![CDATA[Required page is displayed]]>
             </line>
-            <line>
-              <![CDATA[Element is Visible]]>
-            </line>
-            <line>
-              <![CDATA[Required page is displayed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- TestCase_1_ValidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.T1_LoginFunctionality@4fcd19b3]" name="closeApp" is-config="true" duration-ms="1051" started-at="2019-07-15T10:49:19Z" finished-at="2019-07-15T10:49:20Z">
+        </test-method> <!-- TestCase_1_ValidHomepage -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="closeApp" is-config="true" duration-ms="933" started-at="2019-07-16T09:42:10Z" finished-at="2019-07-16T09:42:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestCase_1_ValidLogin status=SUCCESS method=T1_LoginFunctionality.TestCase_1_ValidLogin()[pri:1, instance:script.T1_LoginFunctionality@4fcd19b3] output=Element is present-- PASS ]]]>
+                <![CDATA[[TestResult name=TestCase_1_ValidHomepage status=SUCCESS method=T2_HomePageFunctionality.TestCase_1_ValidHomepage()[pri:1, instance:script.T2_HomePageFunctionality@4fcd19b3] output=Element is present-- PASS ]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[TestCaseName:TestCase_1_ValidLogin Status:PASS]]>
+              <![CDATA[TestCaseName:TestCase_1_ValidHomepage Status:PASS]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.T1_LoginFunctionality -->
+      </class> <!-- script.T2_HomePageFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

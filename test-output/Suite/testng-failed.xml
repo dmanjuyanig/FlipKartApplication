@@ -16,8 +16,8 @@
     <classes>
       <class name="script.T1_LoginFunctionality">
         <methods>
-          <include name="TestCase_1_ValidLogin"/>
           <include name="openApp"/>
+          <include name="TestCase_2_InvalidLogin"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.T1_LoginFunctionality -->

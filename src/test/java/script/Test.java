@@ -23,7 +23,9 @@ public class Test {
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
 		
-		driver.findElement(By.xpath("//input[@class='_2zrpKA _1dBPDZ']")).sendKeys("9739313941");
+		driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/a")).click();
+		
+		/*driver.findElement(By.xpath("//input[@class='_2zrpKA _1dBPDZ']")).sendKeys("9739313941");
 		
 		driver.findElement(By.xpath("//input[@class='_2zrpKA _3v41xv _1dBPDZ']")).sendKeys("Yanig_1sid");
 		
@@ -32,7 +34,7 @@ public class Test {
 		WebElement NameTab = driver.findElement(By.xpath("//div[text() = 'Manju Dhananjaya ']"));
 		Actions action = new Actions(driver);
 		action.moveToElement(NameTab).build().perform();
-		
+		*/
 /*		action.sendKeys(Keys.ARROW_DOWN);
 		action.sendKeys(Keys.ARROW_DOWN);
 		action.sendKeys(Keys.ARROW_DOWN);
@@ -45,7 +47,7 @@ public class Test {
 		action.sendKeys(Keys.ENTER);*/
 		//Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//div[@class = '_1Q5BxB' ][text() = 'Logout']")).click();
+		//driver.findElement(By.xpath("//div[@class = '_1Q5BxB' ][text() = 'Logout']")).click();
 		/*WebElement logout = driver.findElement(By.xpath("//div[@class = '_1Q5BxB' ]"));
 		
 		action.moveToElement(logout);

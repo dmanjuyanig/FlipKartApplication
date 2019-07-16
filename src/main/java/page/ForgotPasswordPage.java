@@ -10,20 +10,20 @@ public class ForgotPasswordPage
 	private WebDriver driver;
 	
 	//***************************************************************************************
-	@FindBy(id="mail")
+	/*@FindBy(id="mail")
 	private WebElement EmailTextField;
 	
 	@FindBy(id="submitBtn")
 	private WebElement SendButton;
 	
 	@FindBy(id="button-cancelButton")
-	private WebElement CancelButton;
+	private WebElement CancelButton;*/
 	
-	@FindBy(id="lnkbtnForgotPwd")
+	@FindBy(xpath="//a[@class = '_21JmK0 _1__46T']")
 	private WebElement ForgotPasswordLink;
 	
-	@FindBy(xpath="//*[@id=\"centerbody\"]/p")
-	private WebElement HeaderTitle;
+/*	@FindBy(xpath="//*[@id=\"centerbody\"]/p")
+	private WebElement HeaderTitle;*/
 	
 	//***************************************************************************************
 	public ForgotPasswordPage(WebDriver driver)
@@ -32,8 +32,14 @@ public class ForgotPasswordPage
 			PageFactory.initElements(driver,this);
 		}
 		//***************************************************************************************
-	public String headerMessage()
+	public void clickForgotPasswordLink()	
+	{
+		ForgotPasswordLink.click();
+	}
+	
+	
+	/*public String headerMessage()
 	{
 		return HeaderTitle.getText();
-	}
+	}*/
 }

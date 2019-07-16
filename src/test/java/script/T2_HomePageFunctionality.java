@@ -1,4 +1,4 @@
-/*package script;
+package script;
 
 import org.testng.annotations.Test;
 
@@ -13,8 +13,11 @@ import page.MyEmployeePage;
 public class T2_HomePageFunctionality extends BaseTest
 {
 	@Test (description = "Verifying valid login functionality" , priority =1, groups = {"smoke"})
-	public void TestCase_1_ValidLogin() throws InterruptedException
+	public void TestCase_1_ValidHomepage() throws InterruptedException
 	{
+	/*	T1_LoginFunctionality one = new T1_LoginFunctionality();
+		one.TestCase_1_ValidLogin();*/
+		
 		String un=Utility.getJSONData(DATA_JSONPATH,"username", "LoginDetails");
 		String pw=Utility.getJSONData(DATA_JSONPATH,"password", "LoginDetails");
 		
@@ -30,7 +33,7 @@ public class T2_HomePageFunctionality extends BaseTest
 		//verify that dashboard page is displayed.
 		String homepageURL=Utility.getJSONData(DATA_JSONPATH,"homepage", "LoginDetails");
 		WebGeneric.VerifyURL(driver, lngETO, homepageURL);
-		
+		/*
 		//click -> logout
 		DashBoardPage home = new DashBoardPage(driver);
 		home.clickMyPageImage(lngETO);
@@ -43,8 +46,8 @@ public class T2_HomePageFunctionality extends BaseTest
 		MyPage.VerifyAcademicPassportTab();
 		MyPage.VerifySkillsCertificationTab();
 		MyPage.VerifyLeaveHistoryTab();
-		MyPage.VerifyStatusHistoryTab();
+		MyPage.VerifyStatusHistoryTab();*/
 	}
 }
 	
-	*/
+	

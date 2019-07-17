@@ -23,7 +23,6 @@ public class Test {
 		driver.manage().window().maximize();
 		driver.get("https://www.flipkart.com/");
 		
-		driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/a")).click();
 		
 		/*driver.findElement(By.xpath("//input[@class='_2zrpKA _1dBPDZ']")).sendKeys("9739313941");
 		

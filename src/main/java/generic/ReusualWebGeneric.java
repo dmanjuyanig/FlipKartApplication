@@ -30,9 +30,9 @@ public class ReusualWebGeneric extends BaseTest
 		{
 			DashBoardPage home = new DashBoardPage(driver);
 			home.HowerOnNameTab();
-			home.clickLogoutButton(lngETO);
 			Thread.sleep(3000);
-					
+			home.clickLogoutButton(lngETO);
+			Thread.sleep(3000);		
 			//verify that login page is displayed or not.
 			String loginpageURL=Utility.getJSONData(DATA_JSONPATH,"loginpage", "LoginDetails");
 			WebGeneric.VerifyURL(driver, lngETO, loginpageURL);

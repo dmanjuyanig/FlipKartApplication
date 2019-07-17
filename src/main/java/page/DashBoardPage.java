@@ -15,44 +15,18 @@ public class DashBoardPage
 	//***************************************************************************************
 	
 	@FindBy(xpath="//div[text() = 'Manju Dhananjaya ']")
-	private WebElement NameTab;
+	private WebElement UserNameTab;
+	
+	@FindBy(xpath="//div[@class = '_2aUbKa'][text() = 'More']")
+	private WebElement MoreTab;
+	
+	@FindBy(xpath="//a[@class = '_3ko_Ud']")
+	private WebElement ChartTab;
 	
 	@FindBy(xpath="//div[@class = '_1Q5BxB' ][text() = 'Logout']")
 	private WebElement LogoutLink;
 	
-	/*@FindBy(id="IMG1")
-	private WebElement LogoutButton;
 	
-	@FindBy(id="IMG3")
-	private WebElement HomeButton;
-	
-	@FindBy(id="Image2")
-	private WebElement HomePageLogo;
-	
-	@FindBy(xpath="//img[@src = \"Images/home-mypage1.png\"]")
-	private WebElement MyPageImage;
-	
-	@FindBy(xpath="//img[@src = \"Images/home-leave1.png\"]")
-	private WebElement ApplyLeaveImage;
-	
-	@FindBy(xpath="//img[@src = \"Images/home-empse1.png\"]")
-	private WebElement HolidayListImage;
-	
-	@FindBy(xpath="//img[@src = \"Images/home-timelive.png\"]")
-	private WebElement PolicyDocumentImage;
-	
-	@FindBy(xpath="//img[@src = \"Images/home-iconnect1.png\"]")
-	private WebElement EmployeeHandbookImage;
-	
-	@FindBy(xpath="//img[@src = \"Images/img-timelive.png\"]")
-	private WebElement TimeLiveImage;
-	
-	@FindBy(xpath="//img[@src = \"Images/img-talent.png\"]")
-	private WebElement TaleoImage;
-	
-	@FindBy(xpath="//img[@src = \"Images/img-quality.png\"]")
-	private WebElement ualityManagementImage;
-	*/
 	//***************************************************************************************
 	public DashBoardPage(WebDriver driver)
 		{
@@ -64,12 +38,20 @@ public class DashBoardPage
 	public void HowerOnNameTab()	
 	{
 		Actions action = new Actions(driver);
-		action.moveToElement(NameTab).build().perform();
+		action.moveToElement(UserNameTab).build().perform();
 	}
 	
-	public void VerifyLogoutButton()
+	public void VerifyUserNameTab()
 	{
-		WebGeneric.WebelementPresent(LogoutLink);
+		WebGeneric.WebelementPresent(UserNameTab);
+	}
+	public void VerifyMoreTab()
+	{
+		WebGeneric.WebelementPresent(MoreTab);
+	}
+	public void VerifyChartTab()
+	{
+		WebGeneric.WebelementPresent(ChartTab);
 	}
 	
 	public void clickLogoutButton(long time)

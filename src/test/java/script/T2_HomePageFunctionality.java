@@ -5,9 +5,7 @@ import org.testng.annotations.Test;
 import generic.BaseTest;
 import generic.Utility;
 import generic.WebGeneric;
-import page.DashBoardPage;
 import page.LoginPage;
-import page.MyEmployeePage;
 
 
 public class T2_HomePageFunctionality extends BaseTest

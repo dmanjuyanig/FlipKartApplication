@@ -3,8 +3,6 @@ package generic;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.Reporter;
-import generic.Utility;
 
 public class Result implements ITestListener,IAutoConst
 {

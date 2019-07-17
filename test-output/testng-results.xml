@@ -14,18 +14,24 @@
       <![CDATA[Required page is displayed]]>
     </line>
     <line>
+      <![CDATA[Element is Visible]]>
+    </line>
+    <line>
+      <![CDATA[Required page is displayed]]>
+    </line>
+    <line>
       <![CDATA[TestCaseName:TestCase_1_ValidHomepage Status:PASS]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14218" started-at="2019-07-16T09:41:57Z" finished-at="2019-07-16T09:42:11Z">
+  <suite name="Default suite" duration-ms="17100" started-at="2019-07-17T10:13:28Z" finished-at="2019-07-17T10:13:45Z">
     <groups>
       <group name="smoke">
-        <method signature="T2_HomePageFunctionality.TestCase_1_ValidHomepage()[pri:1, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="TestCase_1_ValidHomepage" class="script.T2_HomePageFunctionality"/>
+        <method signature="T2_FunctionalTestCases.TestCase_1_ValidHomepage()[pri:1, instance:script.T2_FunctionalTestCases@4fcd19b3]" name="TestCase_1_ValidHomepage" class="script.T2_FunctionalTestCases"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="14218" started-at="2019-07-16T09:41:57Z" finished-at="2019-07-16T09:42:11Z">
-      <class name="script.T2_HomePageFunctionality">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="openApp" is-config="true" duration-ms="9689" started-at="2019-07-16T09:41:57Z" finished-at="2019-07-16T09:42:07Z">
+    <test name="Default test" duration-ms="17100" started-at="2019-07-17T10:13:28Z" finished-at="2019-07-17T10:13:45Z">
+      <class name="script.T2_FunctionalTestCases">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.T2_FunctionalTestCases@4fcd19b3]" name="openApp" is-config="true" duration-ms="10144" started-at="2019-07-17T10:13:28Z" finished-at="2019-07-17T10:13:38Z">
           <params>
             <param index="0">
               <value>
@@ -41,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="TestCase_1_ValidHomepage()[pri:1, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="TestCase_1_ValidHomepage" duration-ms="3569" started-at="2019-07-16T09:42:07Z" description="Verifying valid login functionality" finished-at="2019-07-16T09:42:10Z">
+        <test-method status="PASS" signature="TestCase_1_ValidHomepage()[pri:1, instance:script.T2_FunctionalTestCases@4fcd19b3]" name="TestCase_1_ValidHomepage" duration-ms="6919" started-at="2019-07-17T10:13:38Z" description="Verifying Adding Item to Chart" finished-at="2019-07-17T10:13:45Z">
           <reporter-output>
             <line>
               <![CDATA[Element is present-- PASS ]]>
@@ -55,13 +61,19 @@
             <line>
               <![CDATA[Required page is displayed]]>
             </line>
+            <line>
+              <![CDATA[Element is Visible]]>
+            </line>
+            <line>
+              <![CDATA[Required page is displayed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- TestCase_1_ValidHomepage -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.T2_HomePageFunctionality@4fcd19b3]" name="closeApp" is-config="true" duration-ms="933" started-at="2019-07-16T09:42:10Z" finished-at="2019-07-16T09:42:11Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.T2_FunctionalTestCases@4fcd19b3]" name="closeApp" is-config="true" duration-ms="3" started-at="2019-07-17T10:13:45Z" finished-at="2019-07-17T10:13:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TestCase_1_ValidHomepage status=SUCCESS method=T2_HomePageFunctionality.TestCase_1_ValidHomepage()[pri:1, instance:script.T2_HomePageFunctionality@4fcd19b3] output=Element is present-- PASS ]]]>
+                <![CDATA[[TestResult name=TestCase_1_ValidHomepage status=SUCCESS method=T2_FunctionalTestCases.TestCase_1_ValidHomepage()[pri:1, instance:script.T2_FunctionalTestCases@4fcd19b3] output=Element is present-- PASS ]]]>
               </value>
             </param>
           </params>
@@ -71,7 +83,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.T2_HomePageFunctionality -->
+      </class> <!-- script.T2_FunctionalTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

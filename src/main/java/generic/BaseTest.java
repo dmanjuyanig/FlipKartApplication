@@ -20,12 +20,12 @@ public abstract class BaseTest implements IAutoConst
 		System.setProperty(GECKO_KEY,GECKO_VALUE);
 	}
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public String url=Utility.getPropertyValue(CONFIG_PATH,"URL");
 	public String ITO=Utility.getPropertyValue(CONFIG_PATH,"ITO");
 	public long lngITO=Long.parseLong(ITO);
-	public String ETO=Utility.getPropertyValue(CONFIG_PATH,"ITO");
-	public long lngETO=Long.parseLong(ETO);
+	public static String ETO=Utility.getPropertyValue(CONFIG_PATH,"ITO");
+	public static long lngETO=Long.parseLong(ETO);
 	
 
 	@Parameters({"ip","browser"})
@@ -51,7 +51,7 @@ public abstract class BaseTest implements IAutoConst
 		else{
 			Reporter.log("TestCaseName:"+name +" Status:PASS",true);
 		}
-		driver.quit();
+		//driver.quit();
 	}
 }
 

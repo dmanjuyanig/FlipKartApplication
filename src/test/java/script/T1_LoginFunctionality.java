@@ -1,14 +1,11 @@
 package script;
 
-import java.util.Set;
-
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
 import generic.Utility;
 import generic.WebGeneric;
 import page.DashBoardPage;
-import page.ForgotPasswordPage;
 import page.LoginPage;
 
 
